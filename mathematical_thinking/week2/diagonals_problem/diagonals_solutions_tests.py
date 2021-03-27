@@ -1,8 +1,8 @@
 import unittest
 
-from mathematical_thinking.week1.diagonals_problem.diagonals_solutions import can_extend_to_solution, \
+from mathematical_thinking.week2.diagonals_problem.diagonals_solutions import can_extend_to_solution, \
     determines_diagonals_solutions
-from mathematical_thinking.week1.diagonals_problem.utils import convert_solutions_to_string
+from mathematical_thinking.week2.diagonals_problem.utils import convert_solutions_to_string
 
 
 class TestCanBeExtendedToSolution(unittest.TestCase):
@@ -187,7 +187,8 @@ class TestFillBoardWithDiagonals(unittest.TestCase):
     def test_board_5_by_5(self):
         solutions = determines_diagonals_solutions(board_len=5, diagonals_num=16)
         expected_solutions = [
-            ['/', '/', '/', '_', '\\', '_', '_', '/', '_', '\\', '\\', '\\', '_', '\\', '\\', '\\', '_', '/', '_', '_', '\\', '_', '/', '/', '/']
+            ['/', '/', '/', '_', '\\', '_', '_', '/', '_', '\\', '\\', '\\', '_', '\\', '\\', '\\', '_', '/', '_', '_',
+             '\\', '_', '/', '/', '/']
         ]
         _test_solutions_is_as_expected(solutions, expected_solutions, 5)
 

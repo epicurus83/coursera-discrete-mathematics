@@ -1,4 +1,4 @@
-from mathematical_thinking.week1.diagonals_problem.utils import print_board
+from mathematical_thinking.week2.diagonals_problem.utils import print_board
 
 solution = []
 
